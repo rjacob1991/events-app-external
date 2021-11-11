@@ -86,6 +86,9 @@ describe('POST /event', function () {
         if (err) {
           return done(err);
         }
+        if (err) {
+            return done(err);
+          }
         chai.assert.isTrue(res.text.includes("Redirecting"));
         return done();
       });
